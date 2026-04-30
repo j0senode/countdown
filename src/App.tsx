@@ -104,11 +104,6 @@ function App() {
     <main className="app-shell">
       <section className="card">
         <p className="eyebrow">Death Countdown Generator</p>
-        <h1>Generate a fictional date of death</h1>
-        <p className="intro">
-          Enter a gender and date of birth, then the app will generate one random
-          fictional death date and keep it consistent in this browser.
-        </p>
 
         <form className="form" onSubmit={handleSubmit}>
           <label className="field">
@@ -168,10 +163,6 @@ function App() {
           <section className="result">
             <p className="result-label">Generated death date</p>
             <h2>{formatLongDate(deathDate)}</h2>
-            <p className="message">
-              Stored in local storage, so reopening this site in the same browser keeps the
-              same countdown.
-            </p>
 
             <div className="countdown-stack">
               <CountdownItem label="Years" value={countdown.years} />
