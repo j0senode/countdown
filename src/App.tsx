@@ -171,12 +171,6 @@ function App() {
               <CountdownItem label="Hours" value={countdown.hours} />
               <CountdownItem label="Seconds" value={countdown.seconds} />
             </div>
-
-            {countdown.isComplete ? (
-              <p className="message complete-message">
-                Countdown finished. Generate another fictional date any time.
-              </p>
-            ) : null}
           </section>
         ) : null}
       </section>
